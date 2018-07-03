@@ -12,7 +12,19 @@
 		F05E83FB20EB740400D8E8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05E83F920EB740400D8E8B9 /* Main.storyboard */; };
 		F05E83FD20EB740500D8E8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05E83FC20EB740500D8E8B9 /* Assets.xcassets */; };
 		F05E840020EB740500D8E8B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05E83FE20EB740500D8E8B9 /* LaunchScreen.storyboard */; };
+		F05E840E20EB746600D8E8B9 /* GreeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E840D20EB746600D8E8B9 /* GreeterUITests.swift */; };
+		F05E841620EB74A200D8E8B9 /* Greeter+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E841520EB74A200D8E8B9 /* Greeter+Protocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F05E841020EB746600D8E8B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F05E83EA20EB740400D8E8B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F05E83F120EB740400D8E8B9;
+			remoteInfo = Greeter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F05E83F220EB740400D8E8B9 /* Greeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +34,21 @@
 		F05E83FC20EB740500D8E8B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F05E83FF20EB740500D8E8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F05E840120EB740500D8E8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F05E840B20EB746600D8E8B9 /* GreeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05E840D20EB746600D8E8B9 /* GreeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeterUITests.swift; sourceTree = "<group>"; };
+		F05E840F20EB746600D8E8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F05E841520EB74A200D8E8B9 /* Greeter+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Greeter+Protocol.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F05E83EF20EB740400D8E8B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F05E840820EB746600D8E8B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F05E83F420EB740400D8E8B9 /* Greeter */,
+				F05E840C20EB746600D8E8B9 /* GreeterUITests */,
 				F05E83F320EB740400D8E8B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F05E83F220EB740400D8E8B9 /* Greeter.app */,
+				F05E840B20EB746600D8E8B9 /* GreeterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +87,16 @@
 				F05E840120EB740500D8E8B9 /* Info.plist */,
 			);
 			path = Greeter;
+			sourceTree = "<group>";
+		};
+		F05E840C20EB746600D8E8B9 /* GreeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F05E840D20EB746600D8E8B9 /* GreeterUITests.swift */,
+				F05E840F20EB746600D8E8B9 /* Info.plist */,
+				F05E841520EB74A200D8E8B9 /* Greeter+Protocol.swift */,
+			);
+			path = GreeterUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +119,24 @@
 			productReference = F05E83F220EB740400D8E8B9 /* Greeter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F05E840A20EB746600D8E8B9 /* GreeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F05E841220EB746600D8E8B9 /* Build configuration list for PBXNativeTarget "GreeterUITests" */;
+			buildPhases = (
+				F05E840720EB746600D8E8B9 /* Sources */,
+				F05E840820EB746600D8E8B9 /* Frameworks */,
+				F05E840920EB746600D8E8B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F05E841120EB746600D8E8B9 /* PBXTargetDependency */,
+			);
+			name = GreeterUITests;
+			productName = GreeterUITests;
+			productReference = F05E840B20EB746600D8E8B9 /* GreeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +149,10 @@
 				TargetAttributes = {
 					F05E83F120EB740400D8E8B9 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					F05E840A20EB746600D8E8B9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F05E83F120EB740400D8E8B9;
 					};
 				};
 			};
@@ -113,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				F05E83F120EB740400D8E8B9 /* Greeter */,
+				F05E840A20EB746600D8E8B9 /* GreeterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F05E840920EB746600D8E8B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +205,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F05E840720EB746600D8E8B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05E841620EB74A200D8E8B9 /* Greeter+Protocol.swift in Sources */,
+				F05E840E20EB746600D8E8B9 /* GreeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F05E841120EB746600D8E8B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F05E83F120EB740400D8E8B9 /* Greeter */;
+			targetProxy = F05E841020EB746600D8E8B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F05E83F920EB740400D8E8B9 /* Main.storyboard */ = {
@@ -312,6 +394,44 @@
 			};
 			name = Release;
 		};
+		F05E841320EB746600D8E8B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUCZECDRV4;
+				INFOPLIST_FILE = GreeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydrivesolutions.GreeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Greeter;
+			};
+			name = Debug;
+		};
+		F05E841420EB746600D8E8B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUCZECDRV4;
+				INFOPLIST_FILE = GreeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydrivesolutions.GreeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Greeter;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +449,15 @@
 			buildConfigurations = (
 				F05E840520EB740500D8E8B9 /* Debug */,
 				F05E840620EB740500D8E8B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F05E841220EB746600D8E8B9 /* Build configuration list for PBXNativeTarget "GreeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05E841320EB746600D8E8B9 /* Debug */,
+				F05E841420EB746600D8E8B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

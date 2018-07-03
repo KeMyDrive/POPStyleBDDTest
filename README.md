@@ -36,3 +36,17 @@ The app has following main requirements:
 * When user press __Greet__ button, user should see a welcome message, "__Welcome to POP__"
 
 You can find the entire project under `Greeter` folder in the repo.
+
+# Pros and Cons
+
+There are few benefits of doing BDD using protocol-oriented approach which are as follows:
+* We can use native Swift Features like `protocol`, `extensions`, `enumeration`, etc. freely in the test code without any restrictions.
+* We can use Apple's own `XCTest Framework` to drive development without any 3rd party libraries.
+* We are not restricted to use `Gherkin` syntax. We can customise the language as we wanted.
+* We can re-use any step within our test target. We can avoid duplication using writing smart and reusable steps.
+* We can get started with protocol-oriented BDD framework within few minutes using [XCFit](https://github.com/Shashikant86/XCFit) Xcode templates. XCFit provides lots of [pre-defined steps](https://github.com/Shashikant86/XCFit/blob/master/Pre-Defined_Steps/XCFit_Predefined_Steps.md) that can be used straightaway into the test with no need for implementation.
+
+However, there are few caveats, you may find using BDD in protocol-oriented way:
+* Because of limitation of XCTest, we can not parameterise the scenarios using different examples.
+* We may not get feel of proper BDD as programmers not get notified for the unimplemented steps.
+* The reporting of the scenario execution to non-technical people might be tricky.

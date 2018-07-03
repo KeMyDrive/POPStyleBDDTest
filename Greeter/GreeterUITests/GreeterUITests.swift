@@ -8,8 +8,8 @@
 
 import XCTest
 
-class GreeterUITests: XCTestCase {
-        
+class GreeterUITests: XCTestCase, Greetable {
+
     override func setUp() {
         super.setUp()
         
@@ -22,4 +22,11 @@ class GreeterUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testHomeScreenHasGreetButton() {
+        
+    }
+    
+    func testUserShouldGetWelcomeMessageOnceTappedGreetButton() {
+    
+    }
 }

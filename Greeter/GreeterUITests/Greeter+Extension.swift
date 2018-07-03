@@ -14,14 +14,14 @@ extension Greetable {
     }
     
     func thenIShouldSeeGreetButton() {
-        XCTAssertTrue(XCUIApplication().buttons["Greet"].exists)
+        XCTAssertTrue(GreeterElements.greetButton.exists)
     }
     
     func whenITapGreetButton() {
-        XCUIApplication().buttons["Greet"].tap()
+        GreeterElements.greetButton.tap()
     }
     
     func thenIShouldSeeWelcomeMessage() {
-        XCTAssertTrue(XCUIApplication().staticTexts["Welcome"].exists)
+        XCTAssertTrue(GreeterElements.welcomeText.exists)
     }
 }

@@ -15,6 +15,7 @@
 		F05E840E20EB746600D8E8B9 /* GreeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E840D20EB746600D8E8B9 /* GreeterUITests.swift */; };
 		F05E841620EB74A200D8E8B9 /* Greeter+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E841520EB74A200D8E8B9 /* Greeter+Protocol.swift */; };
 		F05E841820EB87B400D8E8B9 /* Greeter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E841720EB87B400D8E8B9 /* Greeter+Extension.swift */; };
+		F06916A220EB8DC300CE12E0 /* Greeter+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06916A120EB8DC300CE12E0 /* Greeter+Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F05E840F20EB746600D8E8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F05E841520EB74A200D8E8B9 /* Greeter+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Greeter+Protocol.swift"; sourceTree = "<group>"; };
 		F05E841720EB87B400D8E8B9 /* Greeter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Greeter+Extension.swift"; sourceTree = "<group>"; };
+		F06916A120EB8DC300CE12E0 /* Greeter+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Greeter+Enum.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				F05E840F20EB746600D8E8B9 /* Info.plist */,
 				F05E841520EB74A200D8E8B9 /* Greeter+Protocol.swift */,
 				F05E841720EB87B400D8E8B9 /* Greeter+Extension.swift */,
+				F06916A120EB8DC300CE12E0 /* Greeter+Enum.swift */,
 			);
 			path = GreeterUITests;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				F05E841820EB87B400D8E8B9 /* Greeter+Extension.swift in Sources */,
 				F05E841620EB74A200D8E8B9 /* Greeter+Protocol.swift in Sources */,
 				F05E840E20EB746600D8E8B9 /* GreeterUITests.swift in Sources */,
+				F06916A220EB8DC300CE12E0 /* Greeter+Enum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

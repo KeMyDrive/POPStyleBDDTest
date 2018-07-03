@@ -23,10 +23,13 @@ class GreeterUITests: XCTestCase, Greetable {
     }
     
     func testHomeScreenHasGreetButton() {
-        
+        givenTheAppIsLaunched()
+        thenIShouldSeeGreetButton()
     }
     
     func testUserShouldGetWelcomeMessageOnceTappedGreetButton() {
-    
+        givenTheAppIsLaunched()
+        whenITapGreetButton()
+        thenIShouldSeeWelcomeMessage()
     }
 }
